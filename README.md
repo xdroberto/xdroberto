@@ -23,7 +23,7 @@ frontend    →  Next.js · React · Tailwind
 backend     →  Node.js
 creative    →  Three.js · WebGL · p5.js · Web Audio · Processing · TouchDesigner
 infra       →  Docker · Hetzner VPS · Nginx
-tools        →  Git · Figma
+tools       →  Git · Figma
 ```
 
 ```bash
