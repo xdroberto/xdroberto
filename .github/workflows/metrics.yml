@@ -1,0 +1,41 @@
+name: Metrics
+
+# Genera la infografia del perfil y la COMMITEA como github-metrics.svg en
+# este repo. Por eso el README no depende de ningun servicio de terceros en
+# vivo: GitHub sirve un archivo estatico. Si algun dia esta corrida fallara,
+# la imagen anterior se queda publicada (envejece, nunca se rompe).
+on:
+  # Una vez al dia, de madrugada.
+  schedule: [{ cron: '0 8 * * *' }]
+  # Boton manual en la pestana Actions.
+  workflow_dispatch:
+  # Y al tocar el propio workflow, para ver el resultado enseguida.
+  push:
+    branches: [main]
+    paths: ['.github/workflows/metrics.yml']
+
+permissions:
+  contents: write
+
+jobs:
+  metrics:
+    runs-on: ubuntu-latest
+    steps:
+      # Pineado por SHA (v3.34), misma convencion que el deploy del portfolio:
+      # una etiqueta movil puede cambiar bajo los pies; un SHA no.
+      - uses: lowlighter/metrics@65836723097537a54cd8eb90f61839426b4266b6 # v3.34
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          user: xdroberto
+          filename: github-metrics.svg
+          template: classic
+          base: header, activity, community, repositories
+          # Sin zona horaria propia (queda en UTC) y sin el plugin de habitos:
+          # ambos delatan el huso y las horas de actividad, y la regla de este
+          # perfil es no publicar nada que ubique a su dueno.
+          config_timezone: UTC
+          plugin_languages: yes
+          plugin_languages_limit: 8
+          plugin_languages_details: bytes-size, percentage
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: half-year

@@ -30,22 +30,27 @@ tools       →  Git · Figma
 roberto@github:~$ ls -la projects/
 ```
 
-**[`sideeffects-studio`](https://github.com/xdroberto/sideeffects-studio)** — interactive audio-visual experience built with Next.js + Three.js. Live at [robertobh.dev](https://robertobh.dev).
+**[`robertobh.dev`](https://github.com/xdroberto/robertobh.dev)** — personal site, services funnel and two shipped tools, on a self-managed Hetzner VPS. Cookieless analytics on my own server, no third party watching visitors.
+  - [**Web Check**](https://robertobh.dev/web-check) — free diagnostic: paste any address, get an honest report on speed and SEO in plain language, powered by Google PageSpeed.
+  - **Observatory** *(private dashboard)* — my own analytics console over a self-hosted engine: interactive world map with per-city bubbles and a playable timeline, click heatmaps over the live site, and a panel that follows each diagnostic run back to the anonymous visit that ran it.
+  - Case studies: [Legal OS](https://robertobh.dev/work/legal-os) · [Nova Analytics](https://robertobh.dev/work/nova-analytics)
 
-**[`robertobh.dev`](https://github.com/xdroberto/robertobh.dev)** — personal site & portfolio. Deployed on a self-managed Hetzner VPS.
+**[`sideeffects-studio`](https://github.com/xdroberto/sideeffects-studio)** — interactive audio-visual experience built with Next.js + Three.js. Live at [sideeffects.robertobh.dev](https://sideeffects.robertobh.dev).
+
+**[`nova-analytics`](https://github.com/xdroberto/nova-analytics)** — analytics product built from scratch in a 24 hour window. Written up as a [case study](https://robertobh.dev/work/nova-analytics).
 
 ```bash
 roberto@github:~$ ls -la private/
 ```
 
-**`legal-assistant`** *(private)* — platform for immigration law workflows.
+**`legal-assistant`** *(private)* — platform for immigration law workflows. Written up as a [case study](https://robertobh.dev/work/legal-os).
 
 **`moonhouse-giftcards`** *(private)* — gift card management system for restaurant operations.
 
 <br />
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=xdroberto&show_icons=true&theme=tokyo_night&hide_border=true&include_all_commits=true&count_private=true&hide=contribs" alt="github stats" height="160" />
+  <img src="./github-metrics.svg" alt="github metrics" />
 </div>
 
 <br />
