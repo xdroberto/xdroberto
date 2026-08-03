@@ -29,7 +29,12 @@ jobs:
           user: xdroberto
           filename: github-metrics.svg
           template: classic
-          base: header, activity, community, repositories
+          # Solo identidad y actividad. Fuera "community" y "repositories": para
+          # quien trabaja solo y en repos privados son diez contadores en cero
+          # (organizaciones, patrocinios, releases, packages, stargazers,
+          # forkers...) que no dicen nada y entierran lo que si dice mucho, o
+          # sea el volumen de commits y de pull requests.
+          base: header, activity
           # Sin zona horaria propia (queda en UTC) y sin el plugin de habitos:
           # ambos delatan el huso y las horas de actividad, y la regla de este
           # perfil es no publicar nada que ubique a su dueno.
@@ -39,3 +44,5 @@ jobs:
           plugin_languages_details: bytes-size, percentage
           plugin_isocalendar: yes
           plugin_isocalendar_duration: half-year
+          # Lineas escritas y borradas: mide trabajo real, no popularidad.
+          plugin_lines: yes
