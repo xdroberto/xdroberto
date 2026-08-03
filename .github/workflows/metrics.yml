@@ -44,9 +44,8 @@ jobs:
           plugin_languages_details: bytes-size, percentage
           plugin_isocalendar: yes
           plugin_isocalendar_duration: half-year
-          # Lineas escritas y borradas: mide trabajo real, no popularidad.
-          # La espera no es un capricho: la API de estadisticas de GitHub
-          # responde "calculando" la primera vez que se le piden los datos de
-          # un repo, y sin pausa la corrida se queda con las manos vacias.
-          plugin_lines: yes
-          plugin_lines_delay: 10
+          # Nota para el futuro: plugin_lines (lineas escritas y borradas) se
+          # probo y no dibuja nada con esta composicion, aparentemente porque
+          # su bloque cuelga de la seccion "repositories" del template, que
+          # aqui esta fuera a proposito. Si algun dia se quiere, hay que
+          # revisar eso primero en vez de solo encender la opcion.
