@@ -45,4 +45,8 @@ jobs:
           plugin_isocalendar: yes
           plugin_isocalendar_duration: half-year
           # Lineas escritas y borradas: mide trabajo real, no popularidad.
+          # La espera no es un capricho: la API de estadisticas de GitHub
+          # responde "calculando" la primera vez que se le piden los datos de
+          # un repo, y sin pausa la corrida se queda con las manos vacias.
           plugin_lines: yes
+          plugin_lines_delay: 10
