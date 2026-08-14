@@ -47,16 +47,6 @@ roberto@github:~$ ls -la private/
 
 **`moonhouse-giftcards`** *(private)* — gift card management system for restaurant operations.
 
-```bash
-roberto@github:~$ git log --author=roberto --oneline upstream/
-```
-
-**[`mrdoob/three.js`](https://github.com/mrdoob/three.js)** — [#34169](https://github.com/mrdoob/three.js/pull/34169) *merged* — JSDoc corrections across the WebGL renderer, arcball controls and the Phong lighting model, including a `@param` that documented an argument the function never receives.
-
-**[`processing/p5.js-website`](https://github.com/processing/p5.js-website)** — [#1558](https://github.com/processing/p5.js-website/pull/1558) *in review* — Spanish translation of the *Introduction to GLSL* tutorial. Would be the first tutorial available in Spanish on the site.
-
-**[`processing/p5.js-website`](https://github.com/processing/p5.js-website)** — [#1559](https://github.com/processing/p5.js-website/pull/1559) *in review* — Spanish translation of the *Conditionals and Interactivity* tutorial.
-
 <br />
 
 <div align="center">
